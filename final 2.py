@@ -20,7 +20,7 @@ def main_branch(branch,t): # this is the function for the green line
     branch -= 10
     t.right(20)
             
-    while branch != branch_dup :
+    while branch != branch_dup : #if the branch is not equal to the original branch 
         count_three += 1
         branch = semi_branch(branch)
         if branch == branch_dup:
@@ -62,14 +62,14 @@ def semi_branch(branch):
         else:
             break
 
-def branch_fourthy(branch):
+def branch_fourthy(branch): #if the branch is 40
     t.backward(branch)
     t.left(40)
     t.forward(branch)
     branch -= 10
     return thrity(branch)
 
-def thrity(branch):
+def thrity(branch): #if the branch is 50
     t.right(20)
     t.forward(branch)
     branch -= 10
@@ -77,7 +77,7 @@ def thrity(branch):
     return semi_branch(branch)
 
             
-def branch_twenty(branch):
+def branch_twenty(branch): #if the branch is 20
     t.forward(branch)
     sub_branch = int(branch - 10)
     t.color("blue")
@@ -113,6 +113,7 @@ t.color("green")
 main_branch(50,t) # this program only works if branch == 40 and branch == 50!
 
 myWin.exitonclick()
+
 
 
 
