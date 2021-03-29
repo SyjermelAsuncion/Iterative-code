@@ -1,3 +1,8 @@
+#------------------------------
+# Syjer Asuncion
+# Iterative code
+#------------------------------
+
 import turtle
 
 #functions
